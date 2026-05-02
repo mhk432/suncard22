@@ -1,15 +1,24 @@
 
  'use client'
 
+import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 
 const LoginPage = () => {
     const {register,handleSubmit,formState: { errors },}=useForm();
             
-    const handleLogin = (data) =>{
+    const handleLogin = async (data) =>{
+
         console .log(data)
-       
+
+        const { data:res, error } = await authClient.signIn.email({
+    email: data.email, // required
+    password: data.password, // required
+    rememberMe: true,
+    callbackURL: "/",
+});
+       console.log (res,error)
 
     }
 
@@ -43,7 +52,7 @@ const LoginPage = () => {
                     <button className=" py-2 rounded-2xl 
                     btn-block bg-primary text-white">Login</button>
                 </form>
-                <p className="mt-2">Don't have an account? <Link className="text-blue-400" href={'/register'}>Register</Link> </p>
+                <p className="mt-2">Dont have an account? <Link className="text-blue-400" href={'/register'}>Register</Link> </p>
 
             </div>
         </div>
