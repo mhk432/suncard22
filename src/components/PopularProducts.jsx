@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const PopularProducts = async () => {
@@ -13,7 +14,7 @@ const PopularProducts = async () => {
             <div >
 
 
-
+             
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
                     {popularProducts.map((product) => (
@@ -22,13 +23,14 @@ const PopularProducts = async () => {
                             className="card bg-base-100 shadow-md hover:shadow-xl transition"
                         >
                             {/* Image */}
-                            {/* <figure className="h-48 overflow-hidden">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-full object-cover"
-              />
-            </figure> */}
+                             <Image
+                        src={product.image}
+                        alt={product.name}
+                        width={300}
+                        height={200}
+                        className="w-full h-[300px] 
+                         rounded-t-xl "
+                         />
 
                             {/* Content */}
                             <div className="card-body">

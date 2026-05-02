@@ -7,7 +7,7 @@
     "rating": 4.7,
     "stock": 10,
     "description": "Stylish UV protection sunglasses perfect for summer outings.",
-    "image": "https://images.unsplash.com/photo-1708799366365-a24608103bed?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Accessories"
   },
   {
@@ -18,7 +18,7 @@
     "rating": 4.5,
     "stock": 15,
     "description": "Lightweight straw hat for beach days.",
-    "image": "https://plus.unsplash.com/premium_photo-1675993000728-cdc7727e779f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Accessories"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.6,
     "stock": 20,
     "description": "Breathable cotton t-shirt for hot weather.",
-    "image": "https://images.unsplash.com/photo-1521572163404-5f860b25aed1?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Clothing"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.3,
     "stock": 25,
     "description": "Comfortable flip flops for daily wear.",
-    "image": "https://i.ibb.co/ZYW3VTp/flipflop.jpg",
+    "image": "",
     "category": "Footwear"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.8,
     "stock": 30,
     "description": "Soothing gel for sunburn relief.",
-    "image": "https://i.ibb.co/VgR0sCj/aloe.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Skincare"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.9,
     "stock": 18,
     "description": "High protection sunscreen for outdoor use.",
-    "image": "https://i.ibb.co/dk7b6yL/sunscreen.jpg",
+    "image": "https://images.unsplash.com/photo-1738721796993-5f42d9315689?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Skincare"
   },
   {
@@ -73,7 +73,7 @@
     "rating": 4.4,
     "stock": 12,
     "description": "Spacious bag for beach essentials.",
-    "image": "https://i.ibb.co/Fzq1G9p/bag.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Accessories"
   },
   {
@@ -84,7 +84,7 @@
     "rating": 4.2,
     "stock": 14,
     "description": "Clear vision goggles for swimming.",
-    "image": "https://i.ibb.co/6JkZ9Gd/goggles.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Sports"
   },
   {
@@ -95,7 +95,7 @@
     "rating": 4.6,
     "stock": 10,
     "description": "Mini handheld fan for hot days.",
-    "image": "https://i.ibb.co/3pPyZ8T/fan.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Electronics"
   },
   {
@@ -106,7 +106,7 @@
     "rating": 4.7,
     "stock": 40,
     "description": "Stay hydrated with this reusable bottle.",
-    "image": "https://i.ibb.co/KX5KZ6n/bottle.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Essentials"
   },
   {
@@ -117,7 +117,7 @@
     "rating": 4.5,
     "stock": 22,
     "description": "Soft and absorbent towel.",
-    "image": "https://i.ibb.co/TYcYk5y/towel.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Accessories"
   },
   {
@@ -128,7 +128,7 @@
     "rating": 4.4,
     "stock": 16,
     "description": "Protects from direct sunlight.",
-    "image": "https://i.ibb.co/Qp2Zk6M/sunhat.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Accessories"
   },
   {
@@ -139,7 +139,7 @@
     "rating": 4.3,
     "stock": 28,
     "description": "Instant cooling for face.",
-    "image": "https://i.ibb.co/3YkZ2sV/mist.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Skincare"
   },
   {
@@ -150,7 +150,7 @@
     "rating": 4.6,
     "stock": 19,
     "description": "Lightweight and comfy shorts.",
-    "image": "https://i.ibb.co/h7gFvPb/shorts.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Clothing"
   },
   {
@@ -161,7 +161,7 @@
     "rating": 4.5,
     "stock": 8,
     "description": "Stay cool under shade.",
-    "image": "https://i.ibb.co/x2dKc8M/umbrella.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Accessories"
   },
   {
@@ -172,7 +172,7 @@
     "rating": 4.7,
     "stock": 6,
     "description": "Make ice cream at home.",
-    "image": "https://i.ibb.co/6YpY6kC/icecream.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Appliances"
   },
   {
@@ -183,7 +183,7 @@
     "rating": 4.4,
     "stock": 17,
     "description": "Protect your phone at beach.",
-    "image": "https://i.ibb.co/Yt3s8bF/case.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Accessories"
   },
   {
@@ -194,7 +194,7 @@
     "rating": 4.9,
     "stock": 5,
     "description": "Premium stylish sunglasses.",
-    "image": "https://i.ibb.co/9r9Kz6d/sunglass2.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Accessories"
   },
   {
@@ -205,7 +205,7 @@
     "rating": 4.6,
     "stock": 7,
     "description": "Comfortable folding chair.",
-    "image": "https://i.ibb.co/TkY7c5F/chair.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Furniture"
   },
   {
@@ -216,7 +216,7 @@
     "rating": 4.5,
     "stock": 13,
     "description": "Light summer dress.",
-    "image": "https://i.ibb.co/G2z7b7R/dress.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Clothing"
   },
   {
@@ -227,7 +227,7 @@
     "rating": 4.3,
     "stock": 9,
     "description": "Stay cool indoors.",
-    "image": "https://i.ibb.co/zP0dZ9V/mat.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Home"
   },
   {
@@ -238,7 +238,7 @@
     "rating": 4.7,
     "stock": 21,
     "description": "Infuse fruits in water.",
-    "image": "https://i.ibb.co/5rXnZcV/infuser.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Essentials"
   },
   {
@@ -249,7 +249,7 @@
     "rating": 4.2,
     "stock": 35,
     "description": "Fun for beach games.",
-    "image": "https://i.ibb.co/YyZkF7s/ball.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Sports"
   },
   {
@@ -260,7 +260,7 @@
     "rating": 4.6,
     "stock": 11,
     "description": "Keep drinks cold.",
-    "image": "https://i.ibb.co/2t6kW1c/cooler.jpg",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Essentials"
   }
 ]

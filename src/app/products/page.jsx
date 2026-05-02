@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Products = async () => {
@@ -10,12 +11,11 @@ const Products = async () => {
   return (
     <div className=" px-20 py-10">
 
-      {/* Title */}
       <h1 className="text-3xl font-bold text-center mb-8">
         🛍️ All Products({data.length})
       </h1>
 
-      {/* Grid */}
+   
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
                 
@@ -25,6 +25,18 @@ const Products = async () => {
             className="card bg-purple-100 shadow-xl hover:shadow-xl transition"
           >
             <div className="card-body">
+
+              <Image
+       src={product.image}
+       alt={product.name}
+       width={300}
+       height={300}
+       className="w-full h-[300px] 
+          transition duration-300"
+
+           
+        />
+             
                 
                 
               <h2 className="card-title">
@@ -40,9 +52,9 @@ const Products = async () => {
                 ${product.price}
               </p>
 
-              <div className="card-actions justify-end">
+              <div className=" ">
                 <Link href={`/products/${product.id}`}>
-                  <button className="btn btn-primary btn-sm">
+                  <button className="btn btn-block btn-primary rounded-full">
                     View Details
                   </button>
                 </Link>
