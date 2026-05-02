@@ -36,7 +36,7 @@ const RegisterPage = () => {
                        
                     </fieldset>
                     <fieldset className="fieldset ">
-                        <legend className="fieldset-legend py-2 font-bold">Photo</legend>
+                        <legend className="fieldset-legend py-2 font-bold">Photo URL</legend>
                         <input type="photo"
                         
                         className="input " 
