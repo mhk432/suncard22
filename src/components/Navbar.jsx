@@ -24,8 +24,10 @@ const Navbar = () => {
       </div>
 
       <div className='flex items-center gap-4'>
-        <Link className='px-6 py-2 rounded-sm bg-blue-500 text-white cursor-pointer ' href="/">Login</Link>
-        <Link className='px-6 py-2 rounded-sm bg-blue-500 text-white cursor-pointer ' href="/">Register</Link>
+        <Link href="/login" className='px-6 py-2 rounded-sm 
+         bg-blue-500 text-white cursor-pointer ' >Login</Link>
+        <Link className='px-6 py-2 rounded-sm bg-blue-500
+         text-white cursor-pointer ' href="/register">Register</Link>
        
       </div>
     </nav>

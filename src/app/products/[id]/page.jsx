@@ -37,7 +37,7 @@ const productDetails = async ({ params }) => {
   <div className="card-body space-y-5">
     <h2 className="card-title ">{datas.name}</h2>
           <p ><span className="font-bold">Brand:</span > {datas.brand}</p>
-          <p><span className="font-bold">price : </span> {datas.price}</p>
+          <p><span className="font-bold">price : </span> ${datas.price}</p>
           <p><span className="font-bold">Rating :</span> {datas.rating}</p>
 
           <p><span className="font-bold">stock :</span> {datas.stock}</p>
