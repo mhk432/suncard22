@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Skin Hydration",
+    "description": "Drink plenty of water and use hydrating face mist to keep your skin fresh in summer heat.",
+    "image": "https://images.unsplash.com/photo-1771481103879-dd0e658fd7be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 2,
+    "title": "Sun Protection",
+    "description": "Always apply sunscreen before going outside to protect your skin from UV rays.",
+    "image": "https://images.unsplash.com/photo-1686831451322-8d8e234a51e1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 3,
+    "title": "Stay Cool",
+    "description": "Use light cotton clothes and carry a portable fan to stay cool during hot summer days.",
+    "image": "https://media.istockphoto.com/id/180737673/photo/sunscreen-in-tubes.jpg?s=2048x2048&w=is&k=20&c=I12KjlB1NM6HNHRFo-zZGwq-1FBhCAe6n8yNUHeL9-o="
+  }
+]

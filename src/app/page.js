@@ -1,6 +1,7 @@
 
 import Banner from "@/components/Banner";
 import PopularProducts from "@/components/PopularProducts";
+import TopBrands from "@/components/TopBrands";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
     <div className="px-20">
     <Banner></Banner>
     <PopularProducts></PopularProducts>
-      <h1>Home page</h1>
+      <TopBrands></TopBrands>
     </div>
   );
 }

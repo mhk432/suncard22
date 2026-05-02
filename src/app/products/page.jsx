@@ -27,30 +27,26 @@ const Products = async () => {
             <div className="card-body">
 
               <Image
-       src={product.image}
-       alt={product.name}
-       width={300}
-       height={300}
-       className="w-full h-[300px] 
-          transition duration-300"
-
-           
-        />
+                src={product.image}
+                alt={product.name || product.title || "top brand image"}
+                width={400}
+                height={300}
+                className="w-full h-[300px]  rounded-lg"
+              />
              
                 
                 
               <h2 className="card-title">
-                {product.name}
+              {product.name}
           
               </h2>
 
-              <p className="text-yellow-500">
-                ⭐ {product.rating}
-              </p>
+             
 
               <p className="font-bold">
-                ${product.price}
+               price: ${product.price}
               </p>
+              <p ><span className="font-bold">Rating:</span >⭐{product.rating}</p>
 
               <div className=" ">
                 <Link href={`/products/${product.id}`}>

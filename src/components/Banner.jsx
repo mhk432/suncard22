@@ -1,8 +1,10 @@
+
+
+
 "use client";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import img from "@/assets/sunglass.png";
 import Image from "next/image";
 
 export default function Hero() {
@@ -10,29 +12,26 @@ export default function Hero() {
 
   const slides = [
     {
-      title: "🌞 Summer Sale",
+      title: " Summer Sale 50% OFF",
       desc: "Grab your favorite summer products at amazing prices!",
-      img: "https://i.ibb.co/J7yF3cJ/tshirt.jpg",
-      bg: "from-yellow-200 to-orange-300",
+      img: "https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       btn: "Shop Now",
     },
     {
       title: "🔥 Hot Deals",
-      desc: "Up to 50% OFF on selected summer items.",
-      img: "https://i.ibb.co/3sKQ0Qh/sunglass1.jpg",
-      bg: "from-pink-200 to-red-200",
+      desc: "Up to 50% OFF on sunglasses & beach essentials.",
+      img: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       btn: "Explore",
     },
     {
       title: "🏖️ Beach Essentials",
-      desc: "Everything you need for your perfect beach day.",
-      img: "https://i.ibb.co/TYcYk5y/towel.jpg",
-      bg: "from-blue-200 to-green-200",
+      desc: "Everything you need for perfect summer vacation.",
+      img: "https://images.unsplash.com/photo-1624280217162-466a76286d0f?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       btn: "Browse",
     },
   ];
 
-  // 🔁 Auto Slide
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
@@ -41,54 +40,63 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, []);
 
-  // ⬅️➡️ Manual Control
-  const prevSlide = () => {
-    setCurrent((current - 1 + slides.length) % slides.length);
-  };
-
-  const nextSlide = () => {
-    setCurrent((current + 1) % slides.length);
-  };
-
   return (
-    <div
-      className={` px-40 min-h-[90vh] flex items-center rounded-xl bg-gradient-to-r ${slides[current].bg}`}
-    >
-      <div className=" flex flex-col lg:flex-row items-center justify-between w-full px-10 gap-10">
+    <div className="relative w-full min-h-[80vh] flex items-center bg-base-100 overflow-hidden">
+
+      <div className="absolute inset-0 bg-gradient-to-r from-yellow-100 via-pink-100 to-blue-100 opacity-60"></div>
+
+      {/* Content */}
+      <div className="relative max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 w-full">
 
         {/* Text */}
-        <div>
+        <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold">
             {slides[current].title}
           </h1>
 
-          <p className="py-4 max-w-md">
+          <p className="text-gray-600 max-w-md">
             {slides[current].desc}
           </p>
 
           <Link href="/products">
-            <button className="btn btn-primary">
+            <button className="btn btn-primary mt-2">
               {slides[current].btn}
             </button>
           </Link>
         </div>
 
         {/* Image */}
-        <Image src={img} alt="Hero Image"  
-        width={400} height={400} className="rounded-lg shadow-lg w-full">
+        <div className="w-full md:w-[500px]">
+          <Image
+            src={slides[current].img}
+            alt="hero"
+            width={500}
+            height={300}
+            className="rounded-xl shadow-lg object-cover w-full h-[350px]"
+          />
+        </div>
 
-        </Image>
       </div>
 
       {/* Controls */}
-      <div className="px-20 absolute left-5 right-5 flex justify-between top-1/2 transform -translate-y-1/2">
-        <button onClick={prevSlide} className="btn btn-circle">
+      <div className="absolute left-5 right-5 top-1/2 flex justify-between -translate-y-1/2">
+        <button
+          onClick={() =>
+            setCurrent((current - 1 + slides.length) % slides.length)
+          }
+          className="btn btn-circle"
+        >
           ❮
         </button>
-        <button onClick={nextSlide} className="btn btn-circle">
+
+        <button
+          onClick={() => setCurrent((current + 1) % slides.length)}
+          className="btn btn-circle"
+        >
           ❯
         </button>
       </div>
+
     </div>
   );
 }

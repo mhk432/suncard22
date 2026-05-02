@@ -35,18 +35,22 @@ const PopularProducts = async () => {
                             {/* Content */}
                             <div className="card-body">
                                 <h2 className="card-title">{product.name}</h2>
-
-                                <p className="text-yellow-500">
-                                    ⭐ {product.rating}
-                                </p>
+                                 
+                                 <div className="space-y-2">
 
                                 <p className="font-bold">
-                                    ${product.price}
+                                  Price:  ${product.price}
                                 </p>
+                                <p className="text-yellow-500 ">
+                                    
+                                   Rating: ⭐ {product.rating}
+                                </p>
+                                 </div>
 
-                                <div className="card-actions justify-end">
+
+                                <div className=" ">
                                     <Link href={`/products/${product.id}`}>
-                                        <button className="btn btn-primary btn-sm">
+                                        <button className="rounded-full btn btn-primary btn-block">
                                             View Details
                                         </button>
                                     </Link>

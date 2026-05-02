@@ -22,15 +22,15 @@ const productDetails = async ({ params }) => {
                  <Link className="  text-4xl text-red-500" href="/"> 
                <ArrowLeft  size={30} /></Link>
               </div>
-      <div className= " grid grid-cols-2 gap-2 mt-5 px-40">
+      <div className= " grid grid-cols-2  mt-5 px-60">
     <div>
       
      <Image 
                     src={datas.image}
                     alt={datas.name}
-                    width={600}
+                    width={500}
                     height={300}
-                    // className="rounded-lg h-auto w-[300px]"
+                    className="rounded-lg h-[400px]"
                    />
     </div>
                  
