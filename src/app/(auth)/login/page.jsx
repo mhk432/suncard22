@@ -1,26 +1,34 @@
 
- 'use client'
+'use client'
 
-import { authClient } from "@/lib/auth-client";
-import Link from "next/link";
+
 import { useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { authClient } from "@/lib/auth-client";
 
 const LoginPage = () => {
-    const {register,handleSubmit,formState: { errors },}=useForm();
-            
-    const handleLogin = async (data) =>{
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const router = useRouter();
 
-        console .log(data)
+    const handleLogin = async (data) => {
 
-        const { data:res, error } = await authClient.signIn.email({
-    email: data.email, // required
-    password: data.password, // required
-    rememberMe: true,
-    callbackURL: "/",
-});
-       console.log (res,error)
+        const { data: res, error } = await authClient.signIn.email({
+            email: data.email,
+            password: data.password,
+            rememberMe: true,
+        });
 
-    }
+        if (error) {
+            alert(error.message);
+            return;
+        }
+
+        if (res) {
+            alert("Login successful ");
+            router.push("/");
+        }
+    };
 
     return (
         <div className='container mx-auto min-h[80vh] flex 
@@ -31,8 +39,7 @@ const LoginPage = () => {
                 <form   className="space-y-4" onSubmit={handleSubmit(handleLogin)}>
                     <fieldset className="fieldset ">
                         <legend className="fieldset-legend py-2 font-bold"> Email</legend>
-                        <input type="email"
-                        
+                        <input type="email"                     
                         className="input " 
                         {...register("email" ,{required: "email field is required"})}
                          placeholder="Type here email" />
@@ -46,16 +53,15 @@ const LoginPage = () => {
                          className="input rounded-md"
                          {...register("password" ,{ required: "password field is required" })}
                           placeholder="Type here password" />
-                         {errors.password && <p className="text-red-600">{errors.password.message}</p> } 
-                       
-                    </fieldset>
+                         {errors.password && <p className="text-red-600">{errors.password.message}</p> }                     
+                     </fieldset>
                     <button className=" py-2 rounded-2xl 
                     btn-block bg-primary text-white">Login</button>
-                </form>
+               </form>
                 <p className="mt-2">Dont have an account? <Link className="text-blue-400" href={'/register'}>Register</Link> </p>
 
             </div>
-        </div>
+         </div>
     );
 };
 
