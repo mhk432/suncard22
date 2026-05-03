@@ -51,9 +51,7 @@ const Navbar = () => {
               className="rounded-full"
             />
 
-            <span>{user.name}</span>
-            <span className="text-sm text-gray-500">{user.email}</span>
-
+            
             <button
               onClick={handleLogout}
               className="px-4 py-2 bg-red-500 text-white rounded"

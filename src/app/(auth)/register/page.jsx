@@ -6,6 +6,7 @@
 import { authClient } from "@/lib/auth-client";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
+import { SiGoogle } from "react-icons/si";
 
 const RegisterPage = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -35,6 +36,15 @@ const RegisterPage = () => {
             router.push("/login");
         }
     };
+
+
+    //  GOOgle signin
+         const handleGoogleSignin = async () =>{
+            const data = await authClient.signIn.social({
+        provider: "google",
+      });
+      console.log(data)
+         }
 
     return (
          <div className='container mx-auto min-h-[80vh] flex 
@@ -83,11 +93,13 @@ const RegisterPage = () => {
                           className="input rounded-md"
                          {...register("password" ,{ required: "password field is required" })}
                           placeholder="Type here password" />
-                         {errors.password && <p className="text-red-600">          {errors.password.message}</p> } 
+                         {errors.password && <p className="text-red-600">        {errors.password.message}</p> } 
                        
                  </fieldset>
                  <button className=" py-2 rounded-2xl 
                  btn-block bg-primary text-white">Register</button>
+                 <p className="text-center text-2xl font-bold">or</p>
+                                <button className="btn border border-purple-600 btn-block text-cyan-300 text-center mx-auto flex justify-center items-center" onClick={handleGoogleSignin}><SiGoogle size={15}  />Loing with Google</button>
              </form>
 
          </div>

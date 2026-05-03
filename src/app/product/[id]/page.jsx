@@ -1,4 +1,8 @@
+
+
+import { authClient } from "@/lib/auth-client";
 import { ArrowLeft } from "lucide-react";
+import { redirect } from "next/dist/server/api-utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,6 +12,13 @@ const productDetails = async ({ params }) => {
   const res = await fetch("https://suncard.vercel.app/data.json", {
     cache: "no-store",
   });
+  
+
+  //          const session = await authClient(); // user check
+
+  // if (!session?.user) {
+  //   redirect("/login");
+  // }
 
   const data = await res.json();
   const datas = data.find(p => p.id == id)

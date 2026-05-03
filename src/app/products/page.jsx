@@ -49,7 +49,7 @@ const Products = async () => {
               <p ><span className="font-bold">Rating:</span >⭐{product.rating}</p>
 
               <div className=" ">
-                <Link href={`/products/${product.id}`}>
+                <Link href={`/product/${product.id}`}>
                   <button className="btn btn-block btn-primary rounded-full">
                     View Details
                   </button>

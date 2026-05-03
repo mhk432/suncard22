@@ -49,7 +49,7 @@ const PopularProducts = async () => {
 
 
                                 <div className=" ">
-                                    <Link href={`/products/${product.id}`}>
+                                    <Link href={`/product/${product.id}`}>
                                         <button className="rounded-full btn btn-primary btn-block">
                                             View Details
                                         </button>
