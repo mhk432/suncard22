@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# ☀️ SunCart - Summer E-Commerce Website
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A modern responsive e-commerce web application built with **Next.js App Router**, **Better Auth**, and **Tailwind CSS**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Live Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🏠 Home Page
+- Hero section with animated slider
+- 50% Summer sale banner
+- Popular products (from JSON)
+- Top brands section
+- Summer care tips section
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### 🛍️ Products Page
+- Dynamic product listing from JSON API
+- Responsive grid layout (mobile + desktop)
+- Product card with:
+  - Image
+  - Name
+  - Price
+  - Rating
+  - View Details button
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📄 Product Details Page (Protected)
+- Full product details view
+- Large responsive product image
+- Brand, price, rating, stock, category
+- Redirect to login if not authenticated
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🔐 Authentication System (Better Auth)
+- Register page (Name, Email, Photo URL, Password)
+- Login page (Email, Password)
+- Social login support (Google)
+- Auto redirect after login
+- Logout functionality
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### 👤 Profile Page
+- Shows logged-in user info:
+  - Name
+  - Email
+  - Profile image
+- Update profile feature (bonus)
+
+---
+
+### 🧭 Navbar
+- Responsive navigation (SM / MD / LG)
+- Mobile hamburger menu
+- Shows:
+  - Logo
+  - Links (Home, Products, Profile)
+- Auth state handling:
+  - Logged in → Avatar + Logout
+  - Logged out → Login/Register buttons
+
+---
+
+### 📦 Footer
+- Company info
+- Quick links
+- Contact details
+- Social media icons
+
+---
+
+## 🎨 UI/UX Features
+- Fully responsive design (mobile, tablet, desktop)
+- Tailwind CSS styling
+- Animate.css animations
+- Gradient hero background
+- Hover effects & transitions
+- Modern card UI
+
+---
+
+## 🧰 Tech Stack
+
+- ⚛️ Next.js 14+ (App Router)
+- 🎨 Tailwind CSS
+- 🔐 Better Auth (`authClient`)
+- 🖼️ Next.js Image Optimization
+- 🎭 Animate.css
+- 📦 React Hook Form
+- 🎯 Lucide React Icons
+
+---
+
+## 📁 Project Structure
+
+---
+
+##  Route Protection
+
+- Product details page is protected
+- If user not logged in → redirected to login page
+
+---
+
+##  Key Features Implemented
+
+✔ Authentication (Login/Register)  
+✔ Protected Routes  
+✔ Responsive Navbar (Mobile Menu)  
+✔ Product API integration (JSON)  
+✔ Dynamic routing (`/product/[id]`)  
+✔ Image optimization with Next.js  
+✔ Modern UI with animations  
+
+---
+
+##  Author
+
+Developed as a practice full-stack Next.js project for assignment submission.
+
+---
+
+
+## 🏁 Final Note
+
+This project demonstrates:
+- Authentication flow
+- Protected routing
+- Responsive UI design
+- Dynamic data rendering
