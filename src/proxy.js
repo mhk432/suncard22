@@ -1,6 +1,6 @@
 
-import dns from "node:dns";
-  dns.setServers(["8.8.8.8" ,"8.8.4.4"]);
+// import dns from "node:dns";
+//   dns.setServers(["8.8.8.8" ,"8.8.4.4"]);
 
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
@@ -25,7 +25,7 @@ console .log(session,"session")
 }
 
 export const config = {
-  matcher: ["/product/:path*"],
+  matcher: ["/profile", "/product/:path*"],
 }
 
 
