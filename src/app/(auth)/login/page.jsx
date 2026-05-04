@@ -79,12 +79,14 @@ const LoginPage = () => {
                     <button className=" py-2 rounded-2xl 
                     btn-block bg-primary text-white">Login</button>
                 </form>
+            </div>
                 <p className="text-center text-2xl font-bold">or</p>
-                <button className="btn border border-purple-600 btn-block text-cyan-300 text-center mx-auto flex justify-center items-center" onClick={handleGoogleSignin}><SiGoogle size={15} />Loing with Google</button>
+                <button className="btn border
+                 border-purple-600 btn-block
+                  text-cyan-300 text-center mx-auto flex justify-center items-center" onClick={handleGoogleSignin}><SiGoogle size={15} />Loing with Google</button>
 
                 <p className="mt-2">Dont have an account? <Link className="text-blue-400" href={'/register'}>Register</Link> </p>
                 <ToastContainer />
-            </div>
         </div>
     );
 };
