@@ -96,13 +96,13 @@ const RegisterPage = () => {
                          {errors.password && <p className="text-red-600">        {errors.password.message}</p> } 
                        
                  </fieldset>
-             </form>
-
-         </div>
                  <button className=" py-2 rounded-2xl 
                  btn-block bg-primary text-white">Register</button>
+             </form>
+
                  <p className="text-center text-2xl font-bold">or</p>
                                 <button className="btn border border-purple-600 btn-block text-cyan-300 text-center mx-auto flex justify-center items-center" onClick={handleGoogleSignin}><SiGoogle size={15}  />Loing with Google</button>
+         </div>
      </div>
     );
 };
