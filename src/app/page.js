@@ -7,7 +7,7 @@ import TopBrands from "@/components/TopBrands";
 
 export default function Home() {
   return (
-    <div className="px-20">
+    <div className=" px-5 lg:px-20">
     
     <Banner></Banner>
     <PopularProducts></PopularProducts>

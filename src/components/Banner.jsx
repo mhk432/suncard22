@@ -38,65 +38,67 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative w-full min-h-[80vh] flex items-center overflow-hidden 
-    bg-gradient-to-br from-yellow-100 via-pink-100 to-blue-100">
+    <div className="mt-5 relative w-full min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-br from-yellow-100 via-pink-100 to-blue-100">
 
-      {/* Blur overlay for premium look */}
-      <div className="absolute inset-0 backdrop-blur-sm bg-white/30"></div>
+     
+      <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
 
-      {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 w-full">
+   
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 flex flex-col-reverse md:flex-row items-center justify-between gap-10 w-full">
 
-        {/* Text */}
-        <div className="space-y-5 animate__animated animate__fadeInLeft">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800">
+       
+        <div className="space-y-5 text-center md:text-left animate__animated animate__fadeInLeft">
+
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">
             {slides[current].title}
           </h1>
 
-          <p className="text-gray-700 max-w-md text-lg">
+          <p className="text-gray-700 text-base sm:text-lg max-w-md mx-auto md:mx-0">
             {slides[current].desc}
           </p>
 
           <Link href="/products">
-            <button className="px-6 py-3 bg-red-500
-             hover:bg-blue-700 text-white rounded-full shadow-lg transition transform hover:scale-105 animate__animated animate__pulse animate__infinite">
+            <button className="px-6 py-3 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-lg transition transform hover:scale-105 animate__animated animate__pulse animate__infinite">
               {slides[current].btn}
             </button>
           </Link>
         </div>
 
-        {/* Image */}
-        <div className="w-full md:w-[500px] animate__animated animate__zoomIn">
+        {/* IMAGE */}
+        <div className="w-full md:w-[450px] lg:w-[500px] animate__animated animate__zoomIn">
           <Image
             key={slides[current].img}
             src={slides[current].img}
             alt="hero"
             width={500}
             height={300}
-            className="rounded-2xl shadow-2xl object-cover w-full h-[350px] transition duration-500 hover:scale-105"
+            className="rounded-2xl shadow-2xl object-cover w-full h-[250px] sm:h-[300px] md:h-[350px] transition duration-500 hover:scale-105"
           />
         </div>
       </div>
 
-      {/* Controls */}
-      <div className="absolute left-5 right-5 top-1/2 flex justify-between -translate-y-1/2">
+      {/* controls */}
+      <div className="absolute left-3 right-3 top-1/2 flex justify-between -translate-y-1/2">
+
         <button
           onClick={() =>
             setCurrent((current - 1 + slides.length) % slides.length)
           }
-          className="bg-black/80 px-4 py-2 rounded-full shadow
-           hover:bg-white"
+          className="bg-white text-gray-950 px-4 py-2 rounded-full
+          "
         >
           ❮
         </button>
 
         <button
           onClick={() => setCurrent((current + 1) % slides.length)}
-          className="bg-white/80 px-4 py-2 rounded-full shadow hover:bg-white"
+          className="bg-white/80 px-4 py-2 rounded-full hover:bg-white transition"
         >
           ❯
         </button>
+
       </div>
+
     </div>
   );
 }

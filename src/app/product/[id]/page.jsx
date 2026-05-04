@@ -1,8 +1,6 @@
 
-
 import { authClient } from "@/lib/auth-client";
 import { ArrowLeft } from "lucide-react";
-import { redirect } from "next/dist/server/api-utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,11 +12,6 @@ const productDetails = async ({ params }) => {
   });
   
 
-  //          const session = await authClient(); // user check
-
-  // if (!session?.user) {
-  //   redirect("/login");
-  // }
 
   const data = await res.json();
   const datas = data.find(p => p.id == id)
@@ -27,13 +20,13 @@ const productDetails = async ({ params }) => {
      
   return (
     <div   className="" >
-      <div className="px-20 ">
+      <div className=" px-10 lg:px-20 ">
 
               <div className="py-5">
                  <Link className="  text-4xl text-red-500" href="/"> 
                <ArrowLeft  size={30} /></Link>
               </div>
-      <div className= " grid grid-cols-2  mt-5 px-60">
+      <div className= " grid sm:grid-cols-1 lg:grid-cols-2  mt-5 sm:px-10 lg:px-60">
     <div>
       
      <Image 
@@ -41,7 +34,7 @@ const productDetails = async ({ params }) => {
                     alt={datas.name}
                     width={500}
                     height={300}
-                    className="rounded-lg h-[400px]"
+                    className="rounded-lg sm:h-[200] md:h-[400px]"
                    />
     </div>
                  
@@ -56,9 +49,9 @@ const productDetails = async ({ params }) => {
           <p><span className="font-bold">Category :</span> {datas.category}</p>
          
     
-  </div>
-</div>
-      </div>
+         </div>
+        </div>
+       </div>
 
     </div>
   );

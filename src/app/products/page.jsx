@@ -9,62 +9,61 @@ const Products = async () => {
   const data = await res.json();
 
   return (
-    <div className=" px-20 py-10">
+    <div className="px-4 sm:px-6 md:px-10 lg:px-20 py-10">
 
-      <h1 className="text-3xl font-bold text-center mb-8">
-        🛍️ All Products({data.length})
+      {/* Title */}
+      <h1 className="text-2xl md:text-3xl font-bold text-center mb-10">
+        🛍️ All Products ({data?.length})
       </h1>
 
-   
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {/* Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                
         {data.map((product) => (
           <div
             key={product.id}
-            className="card bg-purple-100 shadow-xl hover:shadow-xl transition"
+            className="bg-purple-100 rounded-xl shadow-md hover:shadow-xl transition overflow-hidden"
           >
-            <div className="card-body">
 
-              <Image
-                src={product.image}
-                alt={product.name || product.title || "top brand image"}
-                width={400}
-                height={300}
-                className="w-full h-[300px]  rounded-lg"
-              />
-             
-                
-                
-              <h2 className="card-title">
-              {product.name}
-          
+            {/* Image */}
+            <Image
+              src={product.image}
+              alt={product.name || "product image"}
+              width={400}
+              height={300}
+              className="w-full h-[230px] "
+            />
+
+            {/* Content */}
+            <div className="p-4 space-y-2">
+
+              <h2 className="text-lg font-semibold">
+                {product.name}
               </h2>
 
-             
-
-              <p className="font-bold">
-               price: ${product.price}
+              <p className="font-bold text-gray-700">
+                Price: ${product.price}
               </p>
-              <p ><span className="font-bold">Rating:</span >⭐{product.rating}</p>
 
-              <div className=" ">
-                <Link href={`/product/${product.id}`}>
-                  <button className="btn btn-block btn-primary rounded-full">
-                    View Details
-                  </button>
-                </Link>
-              </div>
+              <p className="text-yellow-600">
+                ⭐ {product.rating}
+              </p>
+
+              {/* Button */}
+              <Link href={`/product/${product.id}`}>
+                <button className="w-full mt-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                  View Details
+                </button>
+              </Link>
 
             </div>
+
           </div>
         ))}
 
       </div>
-
     </div>
   );
 };
 
 export default Products;
-

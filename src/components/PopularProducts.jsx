@@ -8,7 +8,7 @@ const PopularProducts = async () => {
     
     return (
         <div>
-            <div className="text-3xl font-bold text-center mb-8">
+            <div className="mt-10 text-3xl font-bold text-center mb-8">
                 🔥 Popular Products
             </div>
             <div >
